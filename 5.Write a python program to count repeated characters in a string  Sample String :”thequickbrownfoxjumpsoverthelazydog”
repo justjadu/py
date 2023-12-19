@@ -1,1 +1,26 @@
 
+#5.Write a python program to count repeated characters in a string 
+#Sample String :”thequickbrownfoxjumpsoverthelazydog”
+#Expected output:
+#o  4
+#e  3
+#u  2
+#h  2
+#r   2
+#t   2
+
+
+def count_repeated_characters(input_string):
+    char_count = {}
+    for char in input_string:
+        if char.isalpha():
+            char = char.lower()
+            char_count[char] = char_count.get(char, 0) + 1
+
+    for char, count in char_count.items():
+        print(f"{char}: {count}")
+
+# Example Usage:
+sample_string = "thequickbrownfoxjumpsoverthelazydog"
+print("Repeated character count:")
+count_repeated_characters(sample_string)

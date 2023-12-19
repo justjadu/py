@@ -1,1 +1,16 @@
 
+#1.Write a Python program to merge two text files and also count the number of lines in the merged text file.
+
+# Question 1
+file1 = 'file1.txt'
+file2 = 'file2.txt'
+merged_file = 'merged_file.txt'
+
+with open(file1, 'r') as f1, open(file2, 'r') as f2, open(merged_file, 'w') as merged:
+    merged.write(f1.read())
+    merged.write(f2.read())
+
+with open(merged_file, 'r') as merged:
+    line_count = sum(1 for line in merged)
+
+print(f'Number of lines in the merged file: {line_count}')

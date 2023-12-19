@@ -1,1 +1,12 @@
 
+#32.Write a Python class to implement pow(x,n)
+
+class PowerCalculator:
+    @staticmethod
+    def power(x, n):
+        return x ** n
+
+# Example Usage:
+calculator = PowerCalculator()
+result = calculator.power(2, 3)
+print("Result of pow(2, 3):", result)

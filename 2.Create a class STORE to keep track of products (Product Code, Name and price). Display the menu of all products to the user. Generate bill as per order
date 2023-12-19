@@ -1,1 +1,32 @@
+#2.Create a class STORE to keep track of products (Product Code, Name and price). Display the menu of all products to the user. Generate bill as per order
 
+
+# Question 2
+class Store:
+    def __init__(self):
+        self.products = {'001': {'name': 'Product1', 'price': 10},
+                         '002': {'name': 'Product2', 'price': 20},
+                         '003': {'name': 'Product3', 'price': 30}}
+
+    def display_menu(self):
+        print("Product Code\tProduct Name\tPrice")
+        for code, details in self.products.items():
+            print(f"{code}\t\t{details['name']}\t\t{details['price']}")
+
+    def generate_bill(self, order):
+        total_price = 0
+        print("Bill:")
+        print("Product Code\tProduct Name\tPrice")
+        for item in order:
+            details = self.products.get(item)
+            if details:
+                print(f"{item}\t\t{details['name']}\t\t{details['price']}")
+                total_price += details['price']
+        print(f"Total Price: {total_price}")
+
+
+# Example usage
+store = Store()
+store.display_menu()
+order = ['001', '002']
+store.generate_bill(order)

@@ -1,1 +1,11 @@
 
+#29.Write a Python program to find maximum and minimum K elements in Tuple. Take user input for K.
+
+k = int(input("Enter the value of K: "))
+my_tuple = (10, 5, 8, 20, 15)
+
+max_k_elements = tuple(sorted(my_tuple, reverse=True)[:k])
+min_k_elements = tuple(sorted(my_tuple)[:k])
+
+print(f"Maximum {k} elements:", max_k_elements)
+print(f"Minimum {k} elements:", min_k_elements)

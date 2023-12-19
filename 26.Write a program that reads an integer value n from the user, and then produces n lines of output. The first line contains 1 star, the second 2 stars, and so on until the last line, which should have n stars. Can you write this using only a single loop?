@@ -1,1 +1,16 @@
+#26.Write a program that reads an integer value n from the user, and then produces n lines of output. The first line contains 1 star, the second 2 stars, and so on until the last line, which should have n stars. Can you write this using only a single loop? Hint:
+#Remember what the expression ‘+’*5 does.
+#Enter a size: 5
+#+
+#++
+#+++
+#++++
+#+++++
 
+#Ans: 
+
+
+n = int(input("Enter a size: "))
+
+for i in range(1, n + 1):
+    print('*' * i)

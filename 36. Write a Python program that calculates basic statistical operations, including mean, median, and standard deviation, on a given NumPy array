@@ -1,1 +1,15 @@
 
+#36. Write a Python program that calculates basic statistical operations, including mean, median, and standard deviation, on a given NumPy array
+
+
+import numpy as np
+
+data_array = np.random.rand(10)
+
+mean_value = np.mean(data_array)
+median_value = np.median(data_array)
+std_deviation = np.std(data_array)
+
+print("Mean:", mean_value)
+print("Median:", median_value)
+print("Standard Deviation:", std_deviation)

@@ -1,1 +1,6 @@
 
+#25.Write a program that accepts a list from user and print the alternate element of list.
+
+user_list = input("Enter elements of the list separated by spaces: ").split()
+alternate_elements = user_list[::2]
+print("Alternate Elements of the List:", alternate_elements)

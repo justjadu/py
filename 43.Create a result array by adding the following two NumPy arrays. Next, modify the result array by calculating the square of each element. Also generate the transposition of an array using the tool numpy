@@ -1,1 +1,19 @@
 
+#43.Create a result array by adding the following two NumPy arrays. Next, modify the result array by calculating the square of each element. Also generate the transposition of an array using the tool numpy
+
+
+import numpy as np
+
+array1 = np.array([[1, 2], [3, 4]])
+array2 = np.array([[5, 6], [7, 8]])
+
+result_array = array1 + array2
+modified_result = result_array ** 2
+transposed_array = result_array.T
+
+print("Original Result Array:")
+print(result_array)
+print("\nModified Result Array (Squared):")
+print(modified_result)
+print("\nTransposed Result Array:")
+print(transposed_array)

@@ -1,1 +1,48 @@
 
+#16.Write a Python program to print alphabet pattern 'R' and pattern’O’ 
+#Expected Output:
+# ****                                                                   
+# *   *                                                                  
+# *   *                                                                  
+# ****                                                                   
+# * *                                                                    
+# *  *                                                                   
+# *   *
+#AND
+#  ***                                                                   
+# *   *                                                                  
+# *   *                                                                  
+# *   *                                                                  
+# *   *                                                                 
+# *   *                                                                  
+#  *** 
+
+
+
+
+# Pattern R
+def print_pattern_R():
+    print("****")
+    print("*   *")
+    print("*   *")
+    print("****")
+    print("* *")
+    print("*  *")
+    print("*   *")
+
+# Pattern O
+def print_pattern_O():
+    print(" *** ")
+    print("*   *")
+    print("*   *")
+    print("*   *")
+    print("*   *")
+    print("*   *")
+    print(" *** ")
+
+# Example Usage:
+print("Pattern R:")
+print_pattern_R()
+
+print("\nPattern O:")
+print_pattern_O()

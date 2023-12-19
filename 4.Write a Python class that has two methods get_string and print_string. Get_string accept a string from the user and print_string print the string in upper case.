@@ -1,1 +1,16 @@
+#4.Write a Python class that has two methods get_string and print_string. Get_string accept a string from the user and print_string print the string in upper case.
 
+class StringManipulator:
+    def __init__(self):
+        self.my_string = ""
+
+    def get_string(self):
+        self.my_string = input("Enter a string: ")
+
+    def print_string(self):
+        print("Uppercase String:", self.my_string.upper())
+
+# Example Usage:
+str_manipulator = StringManipulator()
+str_manipulator.get_string()
+str_manipulator.print_string()

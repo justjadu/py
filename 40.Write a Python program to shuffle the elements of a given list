@@ -1,1 +1,7 @@
+#40.Write a Python program to shuffle the elements of a given list
 
+import random
+
+user_list = input("Enter elements of the list separated by spaces: ").split()
+random.shuffle(user_list)
+print("Shuffled List:", user_list)

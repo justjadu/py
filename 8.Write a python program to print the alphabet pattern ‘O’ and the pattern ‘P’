@@ -1,1 +1,43 @@
 
+#8.Write a python program to print the alphabet pattern ‘O’ and the pattern ‘P’
+
+#Expected Output:
+#***
+#*  *
+#*  *
+#*  *
+#*  *
+#*  *
+#***
+#AND
+#****
+#*     *
+#*     *
+#****
+#*
+#*
+#*
+
+# Pattern O
+def print_pattern_O():
+    print("***")
+    print("* *")
+    print("* *")
+    print("* *")
+    print("***")
+
+# Pattern P
+def print_pattern_P():
+    print("****")
+    print("*   *")
+    print("*   *")
+    print("****")
+    print("*")
+    print("*")
+
+# Example Usage:
+print("Pattern O:")
+print_pattern_O()
+
+print("\nPattern P:")
+print_pattern_P()

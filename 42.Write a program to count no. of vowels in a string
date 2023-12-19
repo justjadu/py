@@ -1,1 +1,6 @@
+#42.Write a program to count no. of vowels in a string
 
+
+user_string = input("Enter a string: ")
+vowel_count = sum(1 for char in user_string.lower() if char in 'aeiou')
+print("Number of vowels in the string:", vowel_count)

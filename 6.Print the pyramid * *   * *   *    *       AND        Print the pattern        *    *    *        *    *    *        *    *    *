@@ -1,1 +1,28 @@
 
+#6.Print the pyramid
+#*
+#*   *
+#*   *    *
+#      AND
+#       Print the pattern
+#       *    *    *
+#       *    *    *
+#       *    *    *
+# Pyramid
+
+
+def print_pyramid(rows):
+    for i in range(1, rows + 1):
+        print("* " * i)
+
+# Pattern
+def print_pattern(rows):
+    for i in range(rows, 0, -1):
+        print("* " * i)
+
+# Example Usage:
+print("Pyramid:")
+print_pyramid(3)
+
+print("\nPattern:")
+print_pattern(3)

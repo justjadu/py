@@ -1,1 +1,23 @@
+#31.Write a python program to check whether a string contains all letters of the alphabet
 
+import string
+
+def contains_all_letters(input_string):
+    return all(letter in input_string.lower() for letter in string.ascii_lowercase)
+
+# Example Usage:
+user_string = input("Enter a string: ")
+result = contains_all_letters(user_string)
+print("String contains all letters of the alphabet:", result)
+
+32.Write a Python class to implement pow(x,n)
+
+class PowerCalculator:
+    @staticmethod
+    def power(x, n):
+        return x ** n
+
+# Example Usage:
+calculator = PowerCalculator()
+result = calculator.power(2, 3)
+print("Result of pow(2, 3):", result)

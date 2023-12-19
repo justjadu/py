@@ -1,1 +1,28 @@
+#24.a) Write a program that matches a word containing ‘z’.
 
+
+import re
+
+def match_word_z(word):
+    match_result = re.search(r'\b\w*z\w*\b', word)
+    return match_result.group() if match_result else None
+
+# Example Usage:
+word = input("Enter a word: ")
+result = match_word_z(word)
+print("Matched Word:", result)
+
+
+#b) Write a program that matches a string that has an a followed by zero or more b’s.
+
+
+import re
+
+def match_string_a_followed_by_bs(input_string):
+    match_result = re.fullmatch(r'a(b*)', input_string)
+    return match_result.group(1) if match_result else None
+
+# Example Usage:
+string = input("Enter a string: ")
+result = match_string_a_followed_by_bs(string)
+print("Matched String:", result)

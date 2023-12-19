@@ -1,1 +1,19 @@
+#17.Write a Python program that matches a word containing 'z', not at the start or end of the word and match a string that contains only upper and lowercase letters, numbers, and underscores by using function
 
+
+
+import re
+
+def match_word_and_string(word, input_string):
+    # Match a word containing 'z', not at the start or end of the word
+    match_word = re.search(r'\b(?<!\bz)\w*z\w*(?!\bz)\b', word)
+    
+    # Match a string that contains only upper and lowercase letters, numbers, and underscores
+    match_string = re.match(r'^[A-Za-z0-9_]+$', input_string)
+
+    return match_word, match_string
+
+# Example Usage:
+word_match, string_match = match_word_and_string("amazing", "Python_123")
+print("Word Match:", word_match.group() if word_match else None)
+print("String Match:", "Valid" if string_match else "Invalid")

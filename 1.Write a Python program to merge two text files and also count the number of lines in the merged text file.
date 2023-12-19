@@ -14,3 +14,4 @@ with open(merged_file, 'r') as merged:
     line_count = sum(1 for line in merged)
 
 print(f'Number of lines in the merged file: {line_count}')
+

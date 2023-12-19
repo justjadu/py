@@ -1,1 +1,11 @@
 
+#33.Write a Python program to swap two elements in a list. Take user input for the swap index
+
+user_list = input("Enter elements of the list separated by spaces: ").split()
+print("Original List:", user_list)
+
+index1 = int(input("Enter the index of the first element to swap: "))
+index2 = int(input("Enter the index of the second element to swap: "))
+
+user_list[index1], user_list[index2] = user_list[index2], user_list[index1]
+print("List after swapping elements:", user_list)

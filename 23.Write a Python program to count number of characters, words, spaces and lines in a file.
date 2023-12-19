@@ -1,1 +1,17 @@
+#23.Write a Python program to count number of characters, words, spaces and lines in a file.
 
+
+file_path = 'sample.txt'
+
+with open(file_path, 'r') as file:
+    content = file.read()
+
+char_count = len(content)
+word_count = len(content.split())
+space_count = content.count(' ')
+line_count = content.count('\n') + 1
+
+print("Number of Characters:", char_count)
+print("Number of Words:", word_count)
+print("Number of Spaces:", space_count)
+print("Number of Lines:", line_count)

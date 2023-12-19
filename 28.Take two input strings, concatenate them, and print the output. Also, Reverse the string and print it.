@@ -1,1 +1,14 @@
 
+#28.Take two input strings, concatenate them, and print the output. Also, Reverse the string and print it.
+
+string1 = input("Enter the first string: ")
+string2 = input("Enter the second string: ")
+
+# Concatenate strings
+concatenated_string = string1 + string2
+
+# Reverse concatenated string
+reversed_string = concatenated_string[::-1]
+
+print("Concatenated String:", concatenated_string)
+print("Reversed String:", reversed_string)

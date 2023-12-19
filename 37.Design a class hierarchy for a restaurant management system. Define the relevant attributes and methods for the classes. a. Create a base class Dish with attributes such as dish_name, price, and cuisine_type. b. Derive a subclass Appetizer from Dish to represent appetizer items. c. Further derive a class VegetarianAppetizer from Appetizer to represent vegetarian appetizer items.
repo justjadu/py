@@ -1,1 +1,17 @@
 
+#37.Design a class hierarchy for a restaurant management system. Define the relevant attributes and methods for the classes.
+#a. Create a base class Dish with attributes such as dish_name, price, and cuisine_type.
+#b. Derive a subclass Appetizer from Dish to represent appetizer items.
+#c. Further derive a class VegetarianAppetizer from Appetizer to represent vegetarian appetizer items.
+
+class Dish:
+    def __init__(self, dish_name, price, cuisine_type):
+        self.dish_name = dish_name
+        self.price = price
+        self.cuisine_type = cuisine_type
+
+class Appetizer(Dish):
+    pass
+
+class VegetarianAppetizer(Appetizer):
+    pass

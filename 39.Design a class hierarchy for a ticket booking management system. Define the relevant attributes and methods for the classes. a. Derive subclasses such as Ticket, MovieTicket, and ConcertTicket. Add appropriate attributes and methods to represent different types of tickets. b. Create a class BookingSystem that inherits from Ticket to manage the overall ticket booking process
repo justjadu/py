@@ -1,1 +1,15 @@
+#39.Design a class hierarchy for a ticket booking management system. Define the relevant attributes and methods for the classes.
+#a. Derive subclasses such as Ticket, MovieTicket, and ConcertTicket. Add appropriate attributes and methods to represent different types of tickets.
+#b. Create a class BookingSystem that inherits from Ticket to manage the overall ticket booking process
 
+class Ticket:
+    pass
+
+class MovieTicket(Ticket):
+    pass
+
+class ConcertTicket(Ticket):
+    pass
+
+class BookingSystem(Ticket):
+    pass

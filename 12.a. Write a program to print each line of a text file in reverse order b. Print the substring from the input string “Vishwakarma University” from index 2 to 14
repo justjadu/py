@@ -1,1 +1,16 @@
+#12.a. Write a program to print each line of a text file in reverse order
+#b. Print the substring from the input string “Vishwakarma University” from index 2 to 14
 
+
+
+with open('text_file.txt', 'r') as file:
+    lines = file.readlines()
+    reversed_lines = [line.strip()[::-1] for line in lines]
+
+print("Lines in Reverse Order:")
+for line in reversed_lines:
+    print(line)
+
+input_string = "Vishwakarma University"
+substring = input_string[2:15]
+print("Substring:", substring)

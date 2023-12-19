@@ -1,1 +1,18 @@
+#20.Find the factorial of a number by using function. Accept a number from user and reverse the number by using function.
 
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+def reverse_number(number):
+    return int(str(number)[::-1])
+
+# Example Usage:
+num = int(input("Enter a number for factorial and reversal: "))
+factorial_result = factorial(num)
+reverse_result = reverse_number(num)
+
+print(f"Factorial of {num}: {factorial_result}")
+print(f"Reverse of {num}: {reverse_result}")

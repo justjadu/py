@@ -1,1 +1,12 @@
 
+#45.Write a python program to check how many times a given number can be divided by 3 before it is less than or equal to 10.
+
+
+number = int(input("Enter a number: "))
+count = 0
+
+while number > 10:
+    number /= 3
+    count += 1
+
+print(f"The given number can be divided by 3 {count} times before it is less than or equal to 10.")
